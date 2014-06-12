@@ -1,4 +1,4 @@
 DGuides
 =======
 
-Word documents to help people program in D and use D tools
+Documents to help people program in D and use D tools
