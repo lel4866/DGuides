@@ -37,7 +37,7 @@
 <p>I tested this in June 2014 using Windows 7, D version 2.064 with the DMD compiler, Visual Studio 2013 SP2, and Visual D 3.38</p>
 
 <h3>
-<a name="make-the-your-linker-is-digital-mars-optlink" class="anchor" href="#make-the-your-linker-is-digital-mars-optlink"><span class="octicon octicon-link"></span></a>Make the your linker is Digital Mars optlink</h3>
+<a name="make-sure-your-linker-is-digital-mars-optlink" class="anchor" href="#make-sure-your-linker-is-digital-mars-optlink"><span class="octicon octicon-link"></span></a>Make sure your linker is Digital Mars optlink</h3>
 
 <p>Open a command window and type link. You should see:</p>
 
@@ -158,7 +158,7 @@ Details saved as "file://c:\users\larry\documents\visual studio 2013... "
 ========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
 </code></pre>
 
-<p>The problem is that while the compiler knows where the lib.d file is in order to read class definitions for the import, the linker has no idea where the actual compiled code is for those definitions. In this context, the import statement is much like the include of a header file in C++. The linker knows nothing about it except that you want to use the compiled code for Bar. Once again, in the Solution Explorer pane, right click on ConsoleApp and select  Properties. The ConsoleApp Property Pages dialog should come up. Select Linker. In the Library Files field, enter the library name: StaticLib.lib. In the Library Paths field, enter the fully qualified path to the directory containing StaticLib.lib. DON’T FORGET TO PUT DOUBLE QUOTES AROUND THE PATH NAME IF THERE ARE ANY SPACES IN IT!!!”. You won’t get an error message about this. Now, hit OK, and re-build by hitting F7. You should now see:</p>
+<p>Still not out of the woods. The problem is that while the compiler knows where the lib.d file is in order to read class definitions for the import, the linker has no idea where the actual compiled code is for those definitions. In this context, the import statement is much like the include of a header file in C++. The linker knows nothing about it except that you want to use the compiled code for Bar. Once again, in the Solution Explorer pane, right click on ConsoleApp and select  Properties. The ConsoleApp Property Pages dialog should come up. Select Linker. In the Library Files field, enter the library name: StaticLib.lib. In the Library Paths field, enter the fully qualified path to the directory containing StaticLib.lib. DON’T FORGET TO PUT DOUBLE QUOTES AROUND THE PATH NAME IF THERE ARE ANY SPACES IN IT!!!”. You won’t get an error message about this. Now, hit OK, and re-build by hitting F7. You should now see:</p>
 
 <pre><code>------ Build started: Project: ConsoleApp, Configuration: Debug DMD Win32 ------
 Building Debug DMD Win32\ConsoleApp.exe...
