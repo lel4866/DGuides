@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="DGuides : Documents to help people program in D" />
+    <meta name="description" content="Dguides : Documents to help people program in D and use D tools" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>DGuides</title>
+    <title>Dguides</title>
   </head>
 
   <body>
@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/lel4866/DGuides">View on GitHub</a>
 
-          <h1 id="project_title">DGuides</h1>
-          <h2 id="project_tagline">Documents to help people program in D</h2>
+          <h1 id="project_title">Dguides</h1>
+          <h2 id="project_tagline">Documents to help people program in D and use D tools</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/lel4866/DGuides/zipball/master">Download this project as a .zip file</a>
@@ -34,10 +34,10 @@
         <h3>
 <a name="the-simple-guide-to-using-a-visual-d-project-with-a-separate-d-library" class="anchor" href="#the-simple-guide-to-using-a-visual-d-project-with-a-separate-d-library"><span class="octicon octicon-link"></span></a>The Simple Guide to using a Visual D Project with a Separate D Library</h3>
 
-<p>I tested this in June 2014 using Windows 7, D version 2.065 with the DMD compiler, Visual Studio 2013 SP2, and Visual D 3.38</p>
+<p>I tested this in June 2014 using Windows 7, D version 2.064 with the DMD compiler, Visual Studio 2013 SP2, and Visual D 3.38</p>
 
 <h3>
-<a name="make-the-your-linker-is-digital-mars-optlink" class="anchor" href="#make-the-your-linker-is-digital-mars-optlink"><span class="octicon octicon-link"></span></a>Make sure your linker is Digital Mars optlink</h3>
+<a name="make-the-your-linker-is-digital-mars-optlink" class="anchor" href="#make-the-your-linker-is-digital-mars-optlink"><span class="octicon octicon-link"></span></a>Make the your linker is Digital Mars optlink</h3>
 
 <p>Open a command window and type link. You should see:</p>
 
@@ -171,7 +171,9 @@ Converting debug information...
 
 <p>An alternative and somewhat easier method of specify the linker dependencies was suggested by Rainer Schuetze. First, remove the linker dependencies you added in step 14. Then add the StaticLib project to the ConsoleApp solution by right clicking on the solution in the Solution Explorer pane, and selecting Add-&gt;Existing Project… When the Add Existing Project dialog comes up, navigate to StaticLib/StaticLib and select StaticLib.visualdproj, and click Open. You should now see the StaticLib project under the ConsoleApp project in the Solution Explorer pane. Now, go to the PROJECT menu and select Project Dependencies… When the Project Dependencies dialog comes up, you should see ConsoleApp in the Projects drop down, and a check box for StaticLib in the Depends On box. Check the check box. Click OK. Now build the solution again. You should see the same correct result as in step 14. </p>
 
-<p>Note: While I have tried to make this as detailed and accurate as I have time for, I’m a programmer, so the odds that there are bugs in this are probably 100%. Please let me know if you find any at <a href="mailto:lel486@gmail.com">lel486@gmail.com</a>.</p>
+<p>Note: While I have tried to make this as detailed and accurate as I have time for, I’m a programmer, so the odds that there are bugs in this are probably 100%. Please let me know if you find any.</p>
+
+<p>Lawrence E. Lewis</p>
       </section>
     </div>
 
